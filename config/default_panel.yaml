@@ -1,0 +1,21 @@
+# GEO solar panel thermal analysis (1-node dual-face model)
+
+simulation:
+  year: 2025
+  duration_days: 365
+  dt_eclipse_seconds: 10
+  output_dir: output
+
+panel:
+  area_m2: 1.0
+  paddle_tracks_declination: true  # single-axis paddle tracks seasonal declination
+
+thermal:
+  alpha_s: 0.90
+  epsilon_front: 0.85   # cover glass (sun-facing surface)
+  epsilon_back: 0.82    # CFRP substrate (space-facing back)
+  eta_eol: 0.28
+  m_cp_j_k: 800.0
+  solar_constant_w_m2: 1361.0
+  earth_ir_temperature_k: 255.0
+  earth_albedo: 0.30

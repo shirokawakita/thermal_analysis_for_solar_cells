@@ -1,0 +1,82 @@
+/* β角・南北面パネル・日食 — interactive SVG (from beta_angle_solar_panels.html) */
+
+.beta-viz {
+  --color-text-secondary: var(--muted);
+  --color-text-primary: var(--text);
+  --color-text-info: var(--accent2);
+  --color-text-tertiary: #64748b;
+  --color-border-secondary: var(--border);
+  --color-border-tertiary: var(--border);
+  --color-border-primary: #475569;
+  --color-background-secondary: var(--surface2);
+  --color-background-danger: rgba(231, 76, 60, 0.15);
+  --color-border-danger: var(--danger);
+  --color-text-danger: #ff6b6b;
+  --color-background-success: rgba(46, 204, 113, 0.12);
+  --color-border-success: var(--success);
+  --color-text-success: #6ee7a0;
+  --font-mono: var(--mono);
+}
+
+.beta-viz .ctrl {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 8px 0 4px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.beta-viz .ctrl input[type="range"] {
+  flex: 1;
+  accent-color: var(--accent2);
+}
+
+.beta-viz .readout-beta {
+  min-width: 220px;
+  text-align: right;
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--text);
+}
+
+.beta-viz .play-btn {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 12px;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.beta-viz .play-btn:hover { border-color: var(--accent2); }
+
+.beta-viz .legend-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-size: 11px;
+  color: var(--muted);
+  margin: 4px 0;
+}
+
+.beta-viz .legend-item { display: flex; align-items: center; gap: 4px; }
+
+.beta-viz .sw { display: inline-block; border-radius: 2px; }
+
+.beta-viz svg .th {
+  font-size: 13px;
+  font-weight: 600;
+  fill: var(--text);
+}
+
+.beta-viz svg .ts {
+  font-size: 11px;
+  fill: var(--muted);
+}
+
+.beta-viz svg {
+  background: #0b1020;
+  border-radius: 8px;
+}
